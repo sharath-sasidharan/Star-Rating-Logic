@@ -13,10 +13,8 @@ stars.forEach((star, index) => {
 
 function starRating(e) {
   let type = e.type;
-
   // In your code, this.starValue refers to a custom property (starValue) that you've added to each star element in the array of stars (stars).
   let starValue = this.starValue;
-  console.log(starValue, "+");
 
   if (type === "click") {
     output.innerHTML = `You've got ${starValue} Ratings`;
