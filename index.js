@@ -39,16 +39,16 @@ function starRating(e) {
     }
   }
 
-  stars.forEach((elm, ind) => {
+  stars.forEach((elm, index) => {
     if (type === "click") {
-      if (ind < starValue) {
+      if (index < starValue) {
         elm.classList.add("orange");
       } else {
         elm.classList.remove("orange");
       }
     }
     if (type === "mouseover") {
-      if (ind < starValue) {
+      if (index < starValue) {
         elm.classList.add("yellow");
       } else {
         elm.classList.remove("yellow");
